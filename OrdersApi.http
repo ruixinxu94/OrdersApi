@@ -1,0 +1,19 @@
+@OrdersApi_HostAddress = http://localhost:5240
+
+POST {{OrdersApi_HostAddress}}/api/orders
+Content-Type: application/json
+Accept: application/json
+
+{
+  "customerName": "john",
+  "items": [
+    {
+      "productId": "550e8400-e29b-41d4-a716-446655440001",
+      "quantity": 2
+    },
+    {
+      "productId": "550e8400-e29b-41d4-a716-446655440002",
+      "quantity": 1
+    }
+  ]
+}
